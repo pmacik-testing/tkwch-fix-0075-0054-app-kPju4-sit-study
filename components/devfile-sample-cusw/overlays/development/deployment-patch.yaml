@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cusw
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0054-tenant/tkwch-fix-0075-0054-app/devfile-sample-cusw@sha256:7948ded399df4f4a53392acdef5cc1a81bf9d0455aaade7e266449a09f2d0bc4
+        name: my-nodejs
+        resources: {}
+status: {}
